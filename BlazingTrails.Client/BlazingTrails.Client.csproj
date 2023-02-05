@@ -1,0 +1,141 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<NpmLastInstall>node_modules/.last-install</NpmLastInstall>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.12" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <Watch Include="**/*.scss" />
+	  <Watch Remove="Features\Home\SearchFilter.razor.scss" />
+	  <Watch Remove="Features\Home\TrailSearch.razor.scss" />
+	  <Watch Remove="Features\ManageTrails\FormSection.razor.scss" />
+	  <Content Include="node_modules\anymatch\package.json" />
+	  <Content Include="node_modules\binary-extensions\binary-extensions.json" />
+	  <Content Include="node_modules\binary-extensions\package.json" />
+	  <Content Include="node_modules\braces\package.json" />
+	  <Content Include="node_modules\chokidar\package.json" />
+	  <Content Include="node_modules\fill-range\package.json" />
+	  <Content Include="node_modules\glob-parent\package.json" />
+	  <Content Include="node_modules\immutable\package.json" />
+	  <Content Include="node_modules\is-binary-path\package.json" />
+	  <Content Include="node_modules\is-extglob\package.json" />
+	  <Content Include="node_modules\is-glob\package.json" />
+	  <Content Include="node_modules\is-number\package.json" />
+	  <Content Include="node_modules\normalize-path\package.json" />
+	  <Content Include="node_modules\picomatch\package.json" />
+	  <Content Include="node_modules\readdirp\package.json" />
+	  <Content Include="node_modules\sass\package.json" />
+	  <Content Include="node_modules\to-regex-range\package.json" />
+	  <None Include="node_modules\.bin\sass" />
+	  <None Include="node_modules\.bin\sass.cmd" />
+	  <None Include="node_modules\.bin\sass.ps1" />
+	  <None Include="node_modules\.last-install" />
+	  <None Include="node_modules\anymatch\index.js" />
+	  <None Include="node_modules\anymatch\LICENSE" />
+	  <None Include="node_modules\anymatch\README.md" />
+	  <None Include="node_modules\binary-extensions\index.js" />
+	  <None Include="node_modules\binary-extensions\license" />
+	  <None Include="node_modules\binary-extensions\readme.md" />
+	  <None Include="node_modules\braces\CHANGELOG.md" />
+	  <None Include="node_modules\braces\index.js" />
+	  <None Include="node_modules\braces\lib\compile.js" />
+	  <None Include="node_modules\braces\lib\constants.js" />
+	  <None Include="node_modules\braces\lib\expand.js" />
+	  <None Include="node_modules\braces\lib\parse.js" />
+	  <None Include="node_modules\braces\lib\stringify.js" />
+	  <None Include="node_modules\braces\lib\utils.js" />
+	  <None Include="node_modules\braces\LICENSE" />
+	  <None Include="node_modules\braces\README.md" />
+	  <None Include="node_modules\chokidar\index.js" />
+	  <None Include="node_modules\chokidar\lib\constants.js" />
+	  <None Include="node_modules\chokidar\lib\fsevents-handler.js" />
+	  <None Include="node_modules\chokidar\lib\nodefs-handler.js" />
+	  <None Include="node_modules\chokidar\LICENSE" />
+	  <None Include="node_modules\chokidar\README.md" />
+	  <None Include="node_modules\fill-range\index.js" />
+	  <None Include="node_modules\fill-range\LICENSE" />
+	  <None Include="node_modules\fill-range\README.md" />
+	  <None Include="node_modules\glob-parent\CHANGELOG.md" />
+	  <None Include="node_modules\glob-parent\index.js" />
+	  <None Include="node_modules\glob-parent\LICENSE" />
+	  <None Include="node_modules\glob-parent\README.md" />
+	  <None Include="node_modules\immutable\dist\immutable.es.js" />
+	  <None Include="node_modules\immutable\dist\immutable.js" />
+	  <None Include="node_modules\immutable\dist\immutable.js.flow" />
+	  <None Include="node_modules\immutable\dist\immutable.min.js" />
+	  <None Include="node_modules\immutable\LICENSE" />
+	  <None Include="node_modules\immutable\README.md" />
+	  <None Include="node_modules\is-binary-path\index.js" />
+	  <None Include="node_modules\is-binary-path\license" />
+	  <None Include="node_modules\is-binary-path\readme.md" />
+	  <None Include="node_modules\is-extglob\index.js" />
+	  <None Include="node_modules\is-extglob\LICENSE" />
+	  <None Include="node_modules\is-extglob\README.md" />
+	  <None Include="node_modules\is-glob\index.js" />
+	  <None Include="node_modules\is-glob\LICENSE" />
+	  <None Include="node_modules\is-glob\README.md" />
+	  <None Include="node_modules\is-number\index.js" />
+	  <None Include="node_modules\is-number\LICENSE" />
+	  <None Include="node_modules\is-number\README.md" />
+	  <None Include="node_modules\normalize-path\index.js" />
+	  <None Include="node_modules\normalize-path\LICENSE" />
+	  <None Include="node_modules\normalize-path\README.md" />
+	  <None Include="node_modules\picomatch\CHANGELOG.md" />
+	  <None Include="node_modules\picomatch\index.js" />
+	  <None Include="node_modules\picomatch\lib\constants.js" />
+	  <None Include="node_modules\picomatch\lib\parse.js" />
+	  <None Include="node_modules\picomatch\lib\picomatch.js" />
+	  <None Include="node_modules\picomatch\lib\scan.js" />
+	  <None Include="node_modules\picomatch\lib\utils.js" />
+	  <None Include="node_modules\picomatch\LICENSE" />
+	  <None Include="node_modules\picomatch\README.md" />
+	  <None Include="node_modules\readdirp\index.js" />
+	  <None Include="node_modules\readdirp\LICENSE" />
+	  <None Include="node_modules\readdirp\README.md" />
+	  <None Include="node_modules\sass\LICENSE" />
+	  <None Include="node_modules\sass\README.md" />
+	  <None Include="node_modules\sass\sass.dart.js" />
+	  <None Include="node_modules\sass\sass.default.dart.js" />
+	  <None Include="node_modules\sass\sass.js" />
+	  <None Include="node_modules\to-regex-range\index.js" />
+	  <None Include="node_modules\to-regex-range\LICENSE" />
+	  <None Include="node_modules\to-regex-range\README.md" />
+	  <ProjectReference Include="..\BlazingTrails.Shared\BlazingTrails.Shared.csproj" />
+	  <TypeScriptCompile Include="node_modules\anymatch\index.d.ts" />
+	  <TypeScriptCompile Include="node_modules\binary-extensions\binary-extensions.json.d.ts" />
+	  <TypeScriptCompile Include="node_modules\binary-extensions\index.d.ts" />
+	  <TypeScriptCompile Include="node_modules\chokidar\types\index.d.ts" />
+	  <TypeScriptCompile Include="node_modules\immutable\dist\immutable.d.ts" />
+	  <TypeScriptCompile Include="node_modules\is-binary-path\index.d.ts" />
+	  <TypeScriptCompile Include="node_modules\readdirp\index.d.ts" />
+	  <None Update="**/*.css" Watch="false" />
+  </ItemGroup>
+
+  <Target Name="CheckForNpm" BeforeTargets="RunNpmInstall">
+	  <Exec Command="npm --version" ContinueOnError="true">
+		  <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+	  </Exec>
+	  <Error Condition="'$(ErrorCode)' != '0'" Text="NPM is required to build this project." />
+  </Target>
+	
+  <Target Name="RunNpmInstall" BeforeTargets="CompileScopedScss" Inputs="package.json" Outputs="$(NpmLastInstall)">
+	  <Exec Command="npm install" />
+	  <Touch Files="$(NpmLastInstall)" AlwaysCreate="true" />
+  </Target>
+
+  <Target Name="CompileScopedScss" BeforeTargets="Compile">
+	  <ItemGroup>
+		  <ScopedScssFiles Include="Features/**/*.razor.scss" />
+	  </ItemGroup>
+	  <Exec Command="npm run sass -- %(ScopedScssFiles.Identity) %(relativedir)%(filename).css" />
+  </Target>
+	
+</Project>
