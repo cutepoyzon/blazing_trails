@@ -11,12 +11,17 @@ namespace BlazingTrails.Shared.Features.ManageTrails
         public int TimeInMinutes { get; set; }
         public int Length { get; set; }
         public List<RouteInstruction> Route { get; set; } = new List<RouteInstruction>();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> e001945030587c4de1cbf4469b346017bab2bde0
         public class RouteInstruction
         {
             public int Stage { get; set; }
             public string Description { get; set; } = "";
         }
+<<<<<<< HEAD
     }
 
     /// <summary>
@@ -44,5 +49,7 @@ namespace BlazingTrails.Shared.Features.ManageTrails
             RuleFor(x => x.Stage).NotEmpty().WithMessage("Please enter a stage");
             RuleFor(x => x.Description).NotEmpty().WithMessage("Please enter a description");
         }
+=======
+>>>>>>> e001945030587c4de1cbf4469b346017bab2bde0
     }
 }
